@@ -1,20 +1,24 @@
-<?php  $n = (int) readline("Enter the number of prime numbers to display: ");
+var n = parseInt(prompt("Escriu un número:"));
 
-  function isPrime($number) {
-    if ($number <= 1) return false;
-    for ($i = 2; $i <= sqrt($number); $i++) {
-      if ($number % $i == 0) return false;
-    }
-    return true;
-  }
+var count = 0;
+var num = 2;
+var primes = [];
 
-  $count = 0;
-  $num = 2;
-  while ($count < $n) {
-    if (isPrime($num)) {
-      echo $num . " ";
-      $count++;
+while (count < n) {
+    var isPrime = true;
+    
+    for (var i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
     }
-    $num++;
-  }
-?>
+
+    if (isPrime) {
+        primes.push(num);
+        count++;
+    }    
+    num++;
+}
+
+console.log( n + " números primers: " + primes);
