@@ -29,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        echo "el resultat de la suma es ". $sumult;
     }else if($operacio == 2){
         $sumult = $n1 * $n2;  
-        echo "el resultat de la multiplicacio
+        echo "el resultat de la furboh
          es ". $sumult;
     }
 
-}   
+}    
 ?>
