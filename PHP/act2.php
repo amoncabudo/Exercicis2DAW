@@ -17,7 +17,7 @@
     ?>
 
     <div>
-        <h2><?php echo "Hello " . $_POST["name"] . " " . $i; ?></h2>
+        <h2><?php echo "Hello  " . $_POST["name"] . " " . $i; ?></h2>
     </div>
 
     <?php }
