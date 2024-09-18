@@ -15,4 +15,7 @@ function mcd($a,$b) {
 function mcm($a,$b) {
  return ($a * $b) / mcd($a,$b);
 }
+
+echo "El mcd de $a i $b es: " . mcd($a, $b) . "<br>";
+echo "El mcm de $a i $b es: " . mcm($a, $b);
 ?>
