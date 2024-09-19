@@ -4,10 +4,10 @@
         var consonants = 0;
 
         for (var i = 0; i < text.length; i++) {
-            var lletra = text[i].toLowerCase();
+            var lletra = text[i];
 
             if (/[a-z]/.test(lletra)) { 
-                if ('aeiou'.includes(lletra)) {
+                if (lletra == 'a' || lletra == 'e' || lletra == 'i' || lletra == 'o' || lletra == 'u') {
                     vocals++;
                 } else {
                     consonants++;
