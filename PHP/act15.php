@@ -15,7 +15,7 @@
         if (isset($contador[$palabra])) {
             $contador[$palabra]++;
         } else {
-            $contador[$palabra] = 1;
+            $contador[$palabra] = 1;  
         }
     }
 

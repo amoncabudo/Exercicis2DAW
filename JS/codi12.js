@@ -8,6 +8,6 @@ function palindromo(text) {
       document.write ("no es palindromo");
     };
   
-  };
+  };  
   
 palindromo(paraula);
