@@ -1,14 +1,20 @@
-var paraula = prompt("Escriu una paraula");
 
-function contar(letra) {
-    var cont = 0;
+var text = prompt("Escriu una paraula o frase");
+var lletres = [];
 
-    for (var i = 0; i < paraula.length; i++) {
-        var let = paraula(i, i + 1); 
-        if (letra === let) { 
-            cont++;
+for (var i = 0; i < text.length; i++) {
+    var lletra = text[i]; 
+
+    if (/[a-z]/.test(lletra)) {
+        if (lletres[lletra]) {
+            lletres[lletra]++; 
+        } else {
+            lletres[lletra] = 1; 
         }
     }
-    document.write(cont);
 }
-   
+
+    for(lletra in lletres){
+        console.log(`${lletra}: ${lletres[lletra]}`);  
+      }
+

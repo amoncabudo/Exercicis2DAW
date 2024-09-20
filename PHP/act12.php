@@ -3,9 +3,8 @@
     <form method="post" action="act12.php">
         <label for="texto">Escriu una paraula o frase</label>
         <input type="text" id="texto" name="paraula">
-        <button type="submit">Enviar</button>
+        <button button type="submit">Enviar</button>
     </form>
-
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['paraula'])) {
     $paraula = $_POST['paraula'];
